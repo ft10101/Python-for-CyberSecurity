@@ -8,9 +8,9 @@ To use myMAC - MAC Address Changer :
   - ` cd Python-For-CyberSecurity `
 3. Check for Python installation.
   - ` python --version` or `python3 --version`
-- Is Python not already installed? Install it by using :
+Is Python not already installed? Install it by using :
   ` sudo apt install python3` 
 4. Execute the program by running :  
- - ` -$ python3 mac_changer.py -i eth0 -m 00:11:22:33:44:55 ` 
-     -i specifies the interface 
+ - ` -$ python3 mac_changer.py -i eth0 -m 00:11:22:33:44:55 ` <br>
+     -i specifies the interface <br>
      -m specifies the new MAC address that we want to keep 
