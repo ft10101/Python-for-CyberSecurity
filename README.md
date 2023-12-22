@@ -1,8 +1,17 @@
 # Python for Cyber Security
-- myMAC (MAC Address Changer) is a Python script that can change the MAC Address of a Debian-based Linux system.
+### List of tools :
+- DNS_exploration.ipynb  ( Reconnaissance - Domain exploration )
+- InitialAccess_AccountDiscovery_pynb.ipynb ( Discovering Credentials )
+- InitialAccess_AutoRunUSB.ipynb ( Initial Access - Autorun USB )
+- Introduction_to_Scapy.ipynb ( Introduction to Scapy )
+- Port_Scanner.ipynb ( Reconnaissance - Port Scanner )
+- default-UsrPass.txt (contains a list of default usernames and passwords )
+- subdomains.txt ( contains a list of subdomains)
+- mac_changer.py (MAC Address Changer)
   
 ## Get Started
 ### myMAC - MAC Address Changer
+Python script that can change the MAC Address of a Debian-based Linux system.
 To use myMAC - ( MAC Address Changer ) :
 1. Clone the repository.
   - ` git clone https://github.com/ft10101/Python-For-CyberSecurity.git`
@@ -15,4 +24,5 @@ Is Python not already installed? Install it by using: <br>
 4. Execute the program by running :  
  - ` -$ python3 mac_changer.py -i eth0 -m 00:11:22:33:44:55 ` <br>
      -i specifies the interface <br>
-     -m specifies the new MAC address that we want to keep. 
+     -m specifies the new MAC address that we want to keep.
+   ----
