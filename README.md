@@ -25,4 +25,3 @@ Is Python not already installed? Install it by using: <br>
  - ` -$ python3 mac_changer.py -i eth0 -m 00:11:22:33:44:55 ` <br>
      -i specifies the interface <br>
      -m specifies the new MAC address that we want to keep.
-   ----
