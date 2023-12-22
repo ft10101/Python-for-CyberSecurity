@@ -20,13 +20,13 @@ To use any of the following tools, go through these steps:
   - -$`cd Python-For-CyberSecurity `
 3. Check for Python installation.
   - -$`python --version` or `python3 --version` <br>
-Is Python not already installed? Install it by using: <br>
+If Python is not already installed? Install it by using: <br>
     -$`sudo apt install python3`
 4. Execute the program by specifying valid arguments.
 
 ---------------------------------------------------------------------------------------------------------------------
     
-### myNet_scanner - Network Scanner
+# myNet_scanner - Network Scanner
 Python script that scans the network and identifies the IP and MAC address of devices connected to that network. <br>
 To use myNet_scanner - ( Network Scanner ) :
 Execute the program by running :  
@@ -35,7 +35,7 @@ Execute the program by running :
 
 ----------------------------------------------------------------------------------------------------------------------
 
-### myMAC - MAC Address Changer
+# myMAC - MAC Address Changer
 Python script that changes the MAC Address of a Debian-based Linux system. <br>
 To use myMAC - ( MAC Address Changer ) :
 Execute the program by running :  
