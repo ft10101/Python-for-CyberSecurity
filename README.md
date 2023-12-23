@@ -42,3 +42,10 @@ Execute the program by running :
  - -$ `python3 mac_changer.py -i eth0 -m 00:11:22:33:44:55 ` <br>
      -i : specifying the interface. <br>
      -m : specifying the new MAC address.
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+1. Enable port forwarding by
+`echo 1 > /proc/sys/net/ipv4/ip_forward`
+2. 
