@@ -52,6 +52,6 @@ To use myARP_poison ( ARP spoofer ) follow the below-mentioned steps:
 1. Enable port forwarding by <br>
 `echo 1 > /proc/sys/net/ipv4/ip_forward`
 2. Execute the script <br>
-   -$`sudo python3 myARP_poison.py -t 192.168.1.4 -g 192.168.1.1`
-   -t : specifying the target IP address.
+   -$`sudo python3 myARP_poison.py -t 192.168.1.4 -g 192.168.1.1` <br>
+   -t : specifying the target IP address. <br>
    -g : specifying the gateway/router IP address.
