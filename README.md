@@ -10,8 +10,10 @@
 - mac_changer.py (MAC Address Changer)
 - myNet_scanner.py (Network scanner)
 - myARP_poison.py (ARP spoofing - MITM attacker)
+- myPacket_listener.py ( Network Packets listener )
 
------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------
   
 ### Get Started :
 To use any of the following tools, go through these steps:
@@ -22,29 +24,35 @@ To use any of the following tools, go through these steps:
 3. Check for Python installation.
   - -$`python --version` or `python3 --version` <br>
 If Python is not already installed? Install it by using: <br>
-    -$`sudo apt install python3`
+  - -$`sudo apt install python3`
 4. Execute the program by specifying valid arguments.
 
----------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------
+
     
 # myNet_scanner - Network Scanner
 Python script that scans the network and identifies the IP and MAC address of devices connected to that network. <br>
 To use myNet_scanner - ( Network Scanner ) :
 Execute the program by running :  
- - -$ `sudo python3 myNet_scanner.py -i 192.168.1.0/24 ` <br>
-     -i : specifying the IP address range. (0/24 -> all 255)
+- -$ `sudo python3 myNet_scanner.py -i 192.168.1.0/24 ` <br>
+    -i : specifying the IP address range. (0/24 -> all 255)
 
-----------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------
+
 
 # myMAC - MAC Address Changer
 Python script that changes the MAC Address of a Debian-based Linux system. <br>
 To use myMAC - ( MAC Address Changer ) :
 Execute the program by running :  
- - -$ `sudo python3 mac_changer.py -i eth0 -m 00:11:22:33:44:55 ` <br>
-     -i : specifying the interface. <br>
-     -m : specifying the new MAC address.
+- -$ `sudo python3 mac_changer.py -i eth0 -m 00:11:22:33:44:55 ` <br>
+    -i : specifying the interface. <br>
+    -m : specifying the new MAC address.
 
+   
 --------------------------------------------------------------------------------------------------------------------
+
 
 # myARP_poison - ARP spoofer
 Python script that performs MITM attacks.
@@ -52,6 +60,15 @@ To use myARP_poison ( ARP spoofer ) follow the below-mentioned steps:
 1. Enable port forwarding by <br>
 `echo 1 > /proc/sys/net/ipv4/ip_forward`
 2. Execute the script <br>
-   -$`sudo python3 myARP_poison.py -t 192.168.1.4 -g 192.168.1.1` <br>
-   -t : specifying the target IP address. <br>
-   -g : specifying the gateway/router IP address.
+- -$`sudo python3 myARP_poison.py -t 192.168.1.4 -g 192.168.1.1` <br>
+    -t : specifying the target IP address. <br>
+    -g : specifying the gateway/router IP address.
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+# myPacket_listener - Network Packets Listener
+Python script that listens for all the connections same as on wireshark, just a basic implementation of that.<br>
+To use myPacket_listener (Network Packet Listener):
+- -$ `python3 myPacket_listener.py -i wlan0` <br>
+    -i : specifying the interface.
