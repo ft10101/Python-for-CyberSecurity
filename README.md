@@ -11,7 +11,7 @@
 - myNet_scanner.py (Network scanner)
 - myARP_poison.py (ARP spoofing - MITM attacker)
 - myPacket_listener.py ( Network Packets listener )
-
+- myKeylogger.py ( Key Logger )
 
 --------------------------------------------------------------------------------------------------------------------
   
@@ -67,8 +67,18 @@ To use myARP_poison ( ARP spoofer ) follow the below-mentioned steps:
 
 --------------------------------------------------------------------------------------------------------------------
 
+
 # myPacket_listener - Network Packets Listener
 Python script that listens for all the connections same as on wireshark, just a basic implementation of that.<br>
 To use myPacket_listener (Network Packet Listener):
 - -$ `python3 myPacket_listener.py -i wlan0` <br>
     -i : specifying the interface.
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+# myKeylogger - Key Logger
+Python script that records the keystrokes and sends them to an email address. <br>
+To use myKeylogger (Key Logger):
+- -$ `python3 myKeylogger.py`
