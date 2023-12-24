@@ -81,6 +81,6 @@ To use myPacket_listener (Network Packet Listener):
 # myKeylogger - Key Logger
 Python script that records the keystrokes and sends them to an email address. <br>
 To use myKeylogger (Key Logger):
-- -$ `python3 myKeylogger.py -e email@gmail.com -p password1`
-   -e : specifies email address to send recorded keystrokes
+- -$ `python3 myKeylogger.py -e email@gmail.com -p password1` <br>
+   -e : specifies email address to send recorded keystrokes <br>
    -p : specifies the password of that email
