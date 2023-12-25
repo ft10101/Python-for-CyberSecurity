@@ -14,6 +14,8 @@
 - myKeylogger.py ( Key Logger )
 - mySocket.py ( Backdoor )
 - mySocket_listener.py ( Listener for backdoor )
+- myPackage.py ( Presistance )
+- presistanceGuide ( Guide to presistance )
   
 --------------------------------------------------------------------------------------------------------------------
   
@@ -111,3 +113,5 @@ To use mySocket_listener ( Backdoor listener ):
      -p : port number
 
   
+---------------------------------------------------------------------------------------------------------------------------
+
